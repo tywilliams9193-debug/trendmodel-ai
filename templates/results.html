@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Result</title>
+</head>
+<body>
+
+    <h1>Your Generated Image</h1>
+
+    <img src="{{ url_for('static', filename=image) }}" width="700">
+
+    <p>{{ prompt }}</p>
+
+    <br>
+
+    <a href="/">Create Another Image</a>
+
+</body>
+</html>
