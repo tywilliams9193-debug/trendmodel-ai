@@ -2,23 +2,78 @@
 <html>
 <head>
     <title>TrendModel AI</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
+
+        input {
+            width: 80%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background: #0078d4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005ea2;
+        }
+
+        p {
+            color: gray;
+        }
+    </style>
+
 </head>
 <body>
 
-<h1>TrendModel AI</h1>
+    <div class="container">
 
-<form action="/generate" method="post">
+        <h1>TrendModel AI</h1>
 
-    <input
-        type="text"
-        name="prompt"
-        placeholder="Describe image">
+        <p>
+            Generate professional fashion and modeling photos
+            powered by AI and daily trends.
+        </p>
 
-    <button type="submit">
-        Generate
-    </button>
+        <form action="/generate" method="post">
 
-</form>
+            <input
+                type="text"
+                name="prompt"
+                placeholder="Example: fitness model on Miami beach at sunset"
+                required>
+
+            <button type="submit">
+                Generate
+            </button>
+
+        </form>
+
+    </div>
 
 </body>
 </html>
