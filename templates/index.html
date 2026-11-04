@@ -7,9 +7,17 @@
 
 <h1>TrendModel AI</h1>
 
-<form>
-    <input type="text" placeholder="Describe image">
-    <button>Generate</button>
+<form action="/generate" method="post">
+
+    <input
+        type="text"
+        name="prompt"
+        placeholder="Describe image">
+
+    <button type="submit">
+        Generate
+    </button>
+
 </form>
 
 </body>
